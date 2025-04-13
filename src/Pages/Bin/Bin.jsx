@@ -12,8 +12,8 @@ const Bin = () => {
       const now = new Date();
       const updatedBin = bin.filter(note => {
         const deletedDate = new Date(note.deletedAt);
-        const diffInMinutes = (now - deletedDate) / (1000 * 60);
-        return diffInMinutes <= 5;
+        const diffInMinutes = (now - deletedDate) / (1000 * 60 * 60 * 24);
+        return diffInMinutes <= 30;
       });
 
       if (updatedBin.length !== bin.length) {
