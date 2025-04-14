@@ -76,11 +76,11 @@ const Notes = ({ notes, bin, binPage=false}) => {
             </div>
           )
         }
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full px-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full px-4 py-6">
           {
             notes?.length > 0 && notes.map((note) => (
               <div>
-                <div key={note.id} className="w-[17rem] min-h-[7rem] border border-neutral-900 rounded-sm">
+                <div key={note.id} className="w-full max-w-[18rem] min-h-[7rem] border border-neutral-900 rounded-sm">
                   <div
                     className="flex items-center justify-between  p-1 text-2xl"
                   >
