@@ -7,7 +7,7 @@ const SideBar = ()=>{
     }
 
     return (
-        <aside className="w-44 h-screen flex flex-col gap-3 py-4 border-r-2  border-gray-500/10">
+        <aside className="w-44 h-full flex flex-col gap-3 py-4 border-r-2  border-gray-500/10">
                 <div className="flex flex-col gap-2 px-3 text-2xl">
                     <NavLink to="/" className={getStyles}>
                         <span className="material-icons-outlined py-1.5">

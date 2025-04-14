@@ -7,14 +7,14 @@ import Bin from './Pages/Bin/Bin'
 function App() {
 
   return (
-    <>
+    <div className='w-screen h-screen overflow-hidden flex flex-col'>
       <Routes>
         <Route path="/" element={ <Home/>}></Route>
         <Route path="/archive" element={ <Archive/>}></Route>
         <Route path="/important" element={ <Important/>}></Route>
         <Route path="/bin" element={ <Bin/>}></Route>
       </Routes>
-    </>
+    </div>
   )
 }
 

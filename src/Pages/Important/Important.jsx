@@ -12,7 +12,7 @@ const Important = ()=>{
     return (
         <>
             <Header></Header>
-            <main className="flex  text-black">
+            <main className="flex  text-black flex-1 overflow-hidden">
                 <SideBar />
                 <div className="flex flex-col w-[100%]">
                     <Notes notes={pinnedNotes}/>
